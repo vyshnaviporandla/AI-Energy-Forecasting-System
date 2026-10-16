@@ -1,0 +1,11 @@
+
+services:
+  - type: web
+    name: ai-energy-forecast-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt && python main.py
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8

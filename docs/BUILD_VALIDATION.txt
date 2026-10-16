@@ -1,0 +1,37 @@
+Local build attempt exit code: 0
+
+Dataset ready: 17,520 hourly rows
+          timestamp  energy_kwh  temperature_c
+2024-01-01 00:00:00      70.774          19.59
+2024-01-01 01:00:00      66.623          16.34
+2024-01-01 02:00:00      69.645          18.35
+2024-01-01 03:00:00      72.347          17.63
+2024-01-01 04:00:00      75.831          11.75
+Training complete.
+{
+  "project": "AI-Powered Energy Consumption Forecasting System",
+  "dataset_type": "synthetic demo dataset",
+  "rows_used": 17352,
+  "train_rows": 13881,
+  "test_rows": 3471,
+  "split": "chronological 80/20 (no random shuffle)",
+  "model": "RandomForestRegressor",
+  "mae_kwh": 5.494,
+  "rmse_kwh": 7.045,
+  "r2": 0.9447,
+  "baseline_mae_kwh": 9.507,
+  "note": "Demo results are not a utility-grade guarantee. Synthetic data is simulated."
+}
+Model: /mnt/data/AI-Energy-Forecasting/models/energy_forecast_model.joblib
+Charts: /mnt/data/AI-Energy-Forecasting/images
+
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
