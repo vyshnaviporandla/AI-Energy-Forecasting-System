@@ -1,0 +1,14 @@
+{
+  "project": "AI-Powered Energy Consumption Forecasting System",
+  "dataset_type": "synthetic demo dataset",
+  "rows_used": 17352,
+  "train_rows": 13881,
+  "test_rows": 3471,
+  "split": "chronological 80/20 (no random shuffle)",
+  "model": "RandomForestRegressor",
+  "mae_kwh": 5.493,
+  "rmse_kwh": 7.044,
+  "r2": 0.9447,
+  "baseline_mae_kwh": 9.507,
+  "note": "Demo results are not a utility-grade guarantee. Synthetic data is simulated."
+}
